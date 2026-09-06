@@ -1,138 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Portfolio</title>
 
     <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
 
-    <header>
-    <img src="images/blue.g logo.png">
+<header>
+    <img src="images/black gg.png" alt="Gerald Logo" class="logo">
 
-        <nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
 
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Pricing</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-        </nav>
+    <nav id="nav-link">
 
-            <a href="#" class="facebook">f</a>
+        <button class="close-btn" id="close-btn" aria-label="Close navigation">
+            <i class="fas fa-times"></i>
+        </button>
 
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#hire">Contact</a>
 
-             <a href="#" class="twitter">
-    <svg viewBox="0 0 24 24" width="22" height="22">
-        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.027 10.027 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482A13.978 13.978 0 011.67 3.15a4.92 4.92 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.927 4.927 0 004.6 3.419A9.874 9.874 0 010 19.54a13.945 13.945 0 007.548 2.209c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0023.953 4.57z"/>
-            </svg>
-
-
-    </a>
-    <li class="social-icon">
-    <a href="#" class="linkedin">
-        <svg viewBox="0 0 24 24" width="22" height="22">
-            <path fill="white" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V8.99h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.37 4.28 5.45v6.3zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM7.12 20.45H3.56V8.99h3.56v11.46z"/>
-        </svg>
-    </a>
-    </li>
-    <a href="#" class="instagram">
-        <svg viewBox="0 0 24 24" width="22" height="22">
-            <path fill="white" d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm5.5-2.25a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"></path>
-        </svg>
-
-
-<a href="https://wa.me/2349030669126" class="whatsapp">
-    <svg viewBox="0 0 24 24" width="22" height="22">
-        <path fill="white" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.075-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982 1-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.002 5.45-4.437 9.884-9.887 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.89c0 2.096.547 4.142 1.588 5.945L.057 24l6.304-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.89a11.821 11.821 0 00-3.478-8.416"/>
-    </svg>
-</a>
-<a href="https://t.me/esogerald" class="social-icon telegram">
-    <svg viewBox="0 0 24 24" width="22" height="22">
-        <path fill="white" d="M21.9 3.2L18.6 20c-.3 1.2-1 1.5-2 .9l-5.5-4.1-2.7 2.6c-.3.3-.5.5-1 .5l.4-5.6L18 6.6c.4-.4-.1-.6-.6-.2L6.2 13.5.8 11.8c-1.2-.4-1.2-1.2.3-1.8L20.9 2.4c.9-.3 1.7.2 1 .8z"/>
-    </svg>
-</a>
     </nav>
+</header>
 
-    </header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+    <div class="text">
+
+        <h1>
+            Hello, I'm Gerald.
+            <br>
+            <span>I'm a web developer creating simple and beautiful websites.</span>
+        </h1>
+
+        <a href="#about" class="cv">More About Me</a>
+
+        <div class="social-icons">
+
+            <a href="https://wa.me/2349030669126"
+               class="whatsapp"
+               target="_blank"
+               aria-label="WhatsApp">
+
+                <svg viewBox="0 0 24 24" width="22" height="22">
+                    <path fill="white"
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.075-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982 1-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.002 5.45-4.437 9.884-9.887 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.89c0 2.096.547 4.142 1.588 5.945L.057 24l6.304-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.89a11.821 11.821 0 00-3.478-8.416"/>
+                </svg>
+            </a>
 
 
-    <section class="hero">
+            <a href="https://t.me/esogerald"
+               class="telegram"
+               target="_blank"
+               aria-label="Telegram">
 
-        <div class="text">
-            <p>FREELANCE DIGITAL DESIGNER</p>
+                <svg viewBox="0 0 24 24" width="22" height="22">
+                    <path fill="white"
+                    d="M21.9 3.2L18.6 20c-.3 1.2-1 1.5-2 .9l-5.5-4.1-2.7 2.6c-.3.3-.5.5-1 .5l.4-5.6L18 6.6c.4-.4-.1-.6-.6-.2L6.2 13.5.8 11.8c-1.2-.4-1.2-1.2.3-1.8L20.9 2.4c.9-.3 1.7.2 1 .8z"/>
+                </svg>
 
-            <h1>
-                Hello, I'm Gerald.
-                <br>
-                <span>I'm a web developer creating simple and beautiful websites.</span>
-            </h1>
+            </a>
 
-            <a href="#" class="cv">DOWNLOAD MY CV</a>
+
+            <a href="mailto:esolegide@gmail.com"
+               class="gmail-icon"
+               aria-label="Email">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 3.5-8 5-8-5V6l8 5 8-5v1.5z"/>
+                </svg>
+
+            </a>
+
         </div>
-<div class="hero-image">
-    <img src="images/moving.gif" ait="my picture">
 
-        </div>
+    </div>
 
-    </section>
 
-    <section class="about"id="about">
+    <div class="hero-image">
+        <img src="images/moving.png" alt="Gerald">
+    </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+
     <div class="about-image">
-        <img src="images/gerald.jpeg" alt="About Me">
+        <img src="images/gerald.jpeg" alt="About Gerald">
     </div>
 
     <div class="about-content">
 
-     <div class="about-subtitle">
-        My About Details
+        <div class="about-subtitle">
+            My About Details
+        </div>
+
+        <h2>About Me</h2>
+
+        <p>
+            I'm a passionate front-end web developer who enjoys creating
+            clean, modern, and responsive websites. I work with HTML and CSS
+            and I'm continuously improving my skills in web development.
+        </p>
+
+        <div class="about-tabs">
+            <a href="#services" class="active">Main Skills</a>
+            <a href="#projects">Experience</a>
+        </div>
+
+        <div class="skills">
+            <p>
+                I enjoy turning ideas into attractive and user-friendly websites
+                that look good on both desktop and mobile devices. I'm also
+                interested in UI/UX design and creating experiences that are easy to use.
+            </p>
+        </div>
+
     </div>
 
-<h2>About Me</h2>
-
-<p>
-    i'm a passionate digital designer and web developer
-</p>
-<p>
-    who enjoys creating modern,clean,and user-friendly
-</p>
-<p>
-    websites.i focus on combining creativity with
-</p>
-<p>
-    technology to build websites that look great and work
-</p>
-<p>
-    smoothly on all devices
-</p>
-
-<div class="about-tabs">
-    <a href="#" class="active">main skills</a>
-    <a href="#">Awards</a>
-    <a href="#">Experience</a>
-    <a href="#">Education&Certification</a>
-</div>
-
-<div class="skills">
-    <p>User experience design- ui/ux</p>
-    <p>Delight the user and it work.</p>
-    <p>Web and user interface design- Development</p>
-    <p>websites,web experiences,</p>
-    <p>interaction design- Amination</p>
-    <p>i like to move it,move it!</p>
-</div>
-
-</div>
-
-</section>
-
 </section>
 
 
-
+<!-- SERVICES SECTION -->
 <section class="services" id="services">
 
     <div class="services-heading">
@@ -141,66 +147,69 @@
             What can we do for you?
         </div>
 
-        <h2>My Awesome Service</h2>
-
-        <p>
-            There are many variations of passages of Lorem Ipsum available,
-            but the majority have suffered alteration.
-        </p>
+        <h2>My Awesome Services</h2>
 
     </div>
+
 
     <div class="services-container">
 
         <div class="service-box">
-            <div class="service-icon">📈</div>
-            <h3>Business Strategy</h3>
+            <div class="service-icon">🎨</div>
+            <h3>Web Design</h3>
             <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority.
+                I design modern and attractive web pages with layouts,
+                fonts, and styling that create a great user experience.
             </p>
         </div>
 
-        <div class="service-box">
-            <div class="service-icon">🖥️</div>
-            <h3>Website Development</h3>
-            <p>
-                It is a long established fact that a reader will be distracted
-                by the readable.
-            </p>
-        </div>
-
-        <div class="service-box">
-            <div class="service-icon">📊</div>
-            <h3>Marketing & Reporting</h3>
-            <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in all.
-            </p>
-        </div>
-
-        <div class="service-box">
-            <div class="service-icon">📱</div>
-            <h3>Mobile Development</h3>
-            <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority.
-            </p>
-        </div>
-
-        <div class="service-box">
-            <div class="service-icon">↗</div>
-            <h3>Marketing & Reporting</h3>
-            <p>
-                The first line of Lorem Ipsum comes from a line in section.
-            </p>
-        </div>
 
         <div class="service-box">
             <div class="service-icon">🌐</div>
-            <h3>App Development</h3>
+            <h3>Website Development</h3>
             <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+                I create clean, responsive, and user-friendly websites
+                using HTML and CSS.
+            </p>
+        </div>
+
+
+        <div class="service-box">
+            <div class="service-icon">📝</div>
+            <h3>Form & Landing Page</h3>
+            <p>
+                I create registration forms, sign-up pages, contact forms,
+                and simple landing pages.
+            </p>
+        </div>
+
+
+        <div class="service-box">
+            <div class="service-icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>
+                I build websites that look good and work properly on
+                phones, tablets, and computers.
+            </p>
+        </div>
+
+
+        <div class="service-box">
+            <div class="service-icon">🖌️</div>
+            <h3>UI/UX Design</h3>
+            <p>
+                I create clean, modern, and user-friendly interfaces that
+                make websites easy and enjoyable to use.
+            </p>
+        </div>
+
+
+        <div class="service-box">
+            <div class="service-icon">🔧</div>
+            <h3>Website Updates</h3>
+            <p>
+                I can improve existing web pages by updating their layout,
+                styling, content, and overall appearance.
             </p>
         </div>
 
@@ -209,19 +218,20 @@
 </section>
 
 
+<!-- PROJECTS SECTION -->
 <section class="projects" id="projects">
 
     <div class="projects-heading">
 
         <div class="project-subtitle">
-            My complete project
+            My Complete Projects
         </div>
 
-        <h2>My Latest Project</h2>
+        <h2>My Latest Projects</h2>
 
         <p>
-            There are many variations of passages of Lorem Ipsum available,
-            but the majority have suffered alteration.
+            Here are some of my latest projects. Each project showcases
+            my skills, creativity, and progress in web development and design.
         </p>
 
     </div>
@@ -231,12 +241,12 @@
 
         <div class="project-box">
 
-            <img src="images/blue road.avif" alt="Game Development">
+            <img src="images/sign up.png" alt="Sign Up Project">
 
             <div class="project-content">
-                <span>Development</span>
-                <h3>Game Development</h3>
-                <a href="#">Case Study</a>
+                <a href="images/sign up.png" target="_blank">
+                    View More
+                </a>
             </div>
 
         </div>
@@ -244,12 +254,12 @@
 
         <div class="project-box">
 
-            <img src="images/home.jpg" alt="Reporting Development">
+            <img src="images/designer.png" alt="Designer Project">
 
             <div class="project-content">
-                <span>Development</span>
-                <h3>Reporting Development</h3>
-                <a href="#">Case Study</a>
+                <a href="images/designer.png" target="_blank">
+                    View More
+                </a>
             </div>
 
         </div>
@@ -257,208 +267,113 @@
 
         <div class="project-box">
 
-            <img src="images/flower.jpg" alt="SEO Marketing">
+            <img src="images/football.png" alt="Football Project">
 
             <div class="project-content">
-                <span>Application Development</span>
-                <h3>SEO marketing</h3>
-                <a href="#">Case Study</a>
-           </div>
+                <a href="images/football.png" target="_blank">
+                    View More
+                </a>
+            </div>
 
         </div>
-
-    <div class="project-box">
-
-            <img src="images/art.webp" alt="SEO Marketing">
-
-            <div class="project-content">
-                <span>Development</span>
-                <h3>Web Design</h3>
-                <a href="#">Case Study</a>
-           </div>
-    </div>
-    <div class="project-box">
-
-            <img src="images/blue.ccc.webp" alt="SEO Marketing">
-
-            <div class="project-content">
-                <span>Development</span>
-                <h3>App Development</h3>
-                <a href="#">Case Study</a>
-           </div>
-    </div>
-    <div class="project-box">
-
-            <img src="images/red.jpg" alt="SEO Marketing">
-
-            <div class="project-content">
-                <span>Photoshop</span>
-                <h3>Photoshop Design</h3>
-                <a href="#">Case Study</a>
-            </div>
 
     </div>
 
 </section>
 
-    <section class="pricing-section">
 
-    <div class="subtitle">My Budget Plan</div>
+<!-- CONTACT SECTION -->
+<section class="hire-section" id="hire">
 
-    <h1 class="title">Pricing Plan</h1>
+    <div class="hire-content">
 
-    <p class="description">
-      There are many variations of passages of Lorem ipsum available,
-      but the majority have suffered alteration.
-    </p>
+        <div class="hire-left">
 
-    <div class="pricing-container">
+            <p class="small-title">Let's Say Hi</p>
 
+            <h1>Hire Me.</h1>
 
-      <div class="pricing-card">
-        <h3 class="plan-name">Basic</h3>
+            <p class="contact-info">
+                Call on WhatsApp:
+                <strong>+234 9030669126</strong>
+                <br>
 
-        <div class="price">$45</div>
-
-        <div class="currency-text">USD Per Month</div>
-
-        <ul class="features">
-          <li>5 PPC Campaigns Per Day</li>
-          <li>10 Digital Marketing</li>
-          <li>10 Marketing Agency</li>
-          <li>10 Facebook Marketing</li>
-          <li>10 Video Campaigns</li>
-        </ul>
-
-        <button class="purchase-btn">PURCHASE NOW</button>
-      </div>
+                Contact Email:
+                <strong>esolegide@gmail.com</strong>
+            </p>
 
 
+            <form>
 
-      <div class="pricing-card featured">
-        <h3 class="plan-name">Medium</h3>
+                <input type="text" placeholder="Your Name *">
 
-        <div class="price">$99</div>
+                <input type="email" placeholder="Your Email *">
 
-        <div class="currency-text">USD Per Month</div>
+                <input type="text" placeholder="Your Subject">
 
-        <ul class="features">
-          <li>50 PPC Campaigns Per Day</li>
-          <li>100 Digital Marketing</li>
-          <li>100 Marketing Agency</li>
-          <li>100 Facebook Marketing</li>
-          <li>100 Video Campaigns</li>
-        </ul>
+                <textarea placeholder="Your Message *"></textarea>
 
-        <button class="purchase-btn">PURCHASE NOW</button>
-      </div>
+                <button type="submit">
+                    Submit Now
+                </button>
 
-
-
-      <div class="pricing-card">
-        <h3 class="plan-name">Advanced</h3>
-
-        <div class="price">$199</div>
-
-        <div class="currency-text">USD Per Month</div>
-
-        <ul class="features">
-          <li>5 PPC Campaigns Per Day</li>
-          <li>Unlimited Digital Marketing</li>
-          <li>Unlimited Marketing Agency</li>
-          <li>Unlimited Facebook Marketing</li>
-          <li>Unlimited Video Campaigns</li>
-        </ul>
-
-        <button class="purchase-btn">PURCHASE NOW</button>
-      </div>
-
-    </div>
-
-    </section>
-    <section class="pricing-section">
-
-    <div class="subtitle">what's stories on</div>
-
-    <h1 class="title">Latest News</h1>
-
-    <p class="description">
-      There are many variations of passages of Lorem ipsum available,
-      but the majority have suffered alteration.
-    </p>
-</div>
-<div class="projects-container">
-
-        <div class="project-box">
-
-            <img src="images/candle.avif" alt="Game Development">
-
-            <div class="project-content">
-                <span>Development</span>
-                <h3>Have You Heard? Agency Is Your Best To Grow</h3>
-
-            </div>
+            </form>
 
         </div>
 
 
-        <div class="project-box">
-
-            <img src="images/Fruit_Knife.webp" alt="Reporting Development">
-
-            <div class="project-content">
-                <span>Gallery</span>
-                <h3>Agency Works Only Under These Conditions</h3>
-
-            </div>
-
+        <div class="hire-image">
+            <img src="images/hire me.gif" alt="Contact Gerald">
         </div>
 
-
-        <div class="project-box">
-
-            <img src="images/color.jpg" alt="SEO Marketing">
-
-            <div class="project-content">
-                <span>Development</span>
-                <h3>Top 10 Tips To Grow Your Agency</h3>
-
-           </div>
-
-        </div>
-        <section class="hire-section">
-  <div class="hire-content">
-
-
-    <div class="hire-left">
-      <p class="small-title">Let's Say Hi</p>
-
-      <h1>Hire Me.</h1>
-
-      <p class="contact-info">
-        Call on whatsapp: <strong>+234 9030669126</strong><br>
-        Contact Email: <strong>esolegide@gmail.com</strong>
-      </p>
-
-      <form>
-        <input type="text" placeholder="Your Name *">
-        <input type="email" placeholder="Your Email *">
-        <input type="text" placeholder="Your Subject">
-
-        <textarea placeholder="Your Message *"></textarea>
-
-        <button type="submit">Submit Now</button>
-      </form>
     </div>
 
-
-    <div class="hire-image">
-      <img src="images/me..jpeg" alt="Contact">
-    </div>
-
-  </div>
 </section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-logo">
+
+        <img src="images/black gg.png" alt="Gerald Logo">
+
+        <span>Gerald</span>
+
+    </div>
+
+
+    <div class="social-icons">
+
+        <a href="https://github.com/esolegide" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/eso-gerald-8007b9277/"
+           target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://twitter.com/gerald_esogerald"
+           target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+    </div>
+
+
+    <div class="copyright">
+
+        <p>Copyright © 2026 All rights reserved by Gerald</p>
+
+        <p>Built with love. All rights reserved.</p>
+
+    </div>
+
+</footer>
+
+
+<script src="index.js"></script>
 
 </body>
-
 </html>
